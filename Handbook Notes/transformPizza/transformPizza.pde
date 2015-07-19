@@ -4,12 +4,16 @@ void setup(){
   background(255);
   size(600, 600);
   theta = 0;
+  frameRate(10);
 }
 
 void draw(){
   stroke(255, 120);
   translate(width/2, height/2);   // Set initial offset
+  
   rotate(theta);
+  theta += 0.03;
+  
   for (int i = 0; i < 10; i++) {  // 10 repetitions
     strokeWeight(4);  // Increase stroke weight
     rotate(PI/4.8);    // Accumulate the rotation
