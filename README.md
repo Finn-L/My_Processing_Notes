@@ -1,5 +1,3 @@
-# My_Processing_Notes
+# My Processing Notes Folder
 
-### This repo contains notes and creations related to Processing and creative programming, which is of private use.
-
-####However, feel free to download the code and play with it : )
+### This repo contains notes and works related to Processing programming. Feel free to download the code and play with it : )
