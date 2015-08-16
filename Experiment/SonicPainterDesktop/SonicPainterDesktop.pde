@@ -19,7 +19,7 @@ void setup()
   player.setLooping(true);
   player2 = maxim.loadFile("bells.wav");
   player2.setLooping(true);
-  player.volume(0.25);
+  player.volume(0.35);
   background(0);
   rectMode(CENTER);
   
@@ -69,7 +69,7 @@ void mouseDragged()
   
   // set the triangle locations based on mouse inputs
   float chance = random(1);
-  if(chance > 0.97){
+  if(chance > 0.9){
     floats[counter][0] = mouseX + random(-150, 150);
     floats[counter][1] = mouseY + random(-150, 150);
     counter++;
@@ -81,10 +81,9 @@ void mouseDragged()
   }
   // update my customized shapes
   trigs.update(floats);
-
-  player.setFilter((float) mouseY/height*5000,mouseX / width);
-  player2.setFilter((float) mouseY/height*5000,mouseX / width);
   
+  // tune audio
+  player.setFilter((float) (mouseY/height*5000) ,mouseX / width);  
   player2.ramp(1.,1000);
   player2.speed((float) mouseX/width/2);
 }
