@@ -83,7 +83,7 @@ void mouseDragged()
   trigs.update(floats);
   
   // tune audio
-  player.setFilter((float) (mouseY/height*5000) ,mouseX / width);  
+  //player.setFilter((float) (mouseY/height*5000) ,mouseX / width);  
   player2.ramp(1.,1000);
   player2.speed((float) mouseX/width/2);
 }
