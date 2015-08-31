@@ -19,7 +19,7 @@ class Particle {
     if(power > threshold){
       xspeed += random(-10, 10);
       yspeed += random(-10, 2);
-      diameter = 25;
+      diameter = 15;
       self = color(255);
     } else {
       diameter = 10;

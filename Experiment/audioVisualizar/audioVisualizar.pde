@@ -18,7 +18,7 @@ void setup() {
   particles = new ArrayList<Particle>();
   frameRate(30); // this is the framerate. Tweak for performance.
   maxim = new Maxim(this);
-  player = maxim.loadFile("beat.wav");
+  player = maxim.loadFile("data/beat1.wav");
   player.setLooping(true);
   player.setAnalysing(true);
   //initialize color panel
